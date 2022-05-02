@@ -4,6 +4,7 @@ public class Tank {
     int fuel = 100;
     static int countTank;
     int c;
+    String model = "T-34";
 
     public Tank() {
         this(0, 0, 100);
@@ -38,7 +39,7 @@ public class Tank {
 
 
     public void printPosition() {
-        System.out.println("The Tank is at " + x +", " + y + " now.");
+        System.out.println("The Tank "+model+" is at " + x +", " + y + " now.");
     }
 
     public void turnLeft() {
